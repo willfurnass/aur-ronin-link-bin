@@ -2,3 +2,13 @@
 
 Repackaged .deb package.
 
+## Build and install
+
+```
+makepkg
+```
+
+Optionally:
+```
+makepkg --install
+```
