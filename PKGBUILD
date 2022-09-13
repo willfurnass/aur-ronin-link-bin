@@ -3,7 +3,7 @@
 
 pkgname=ronin-link-bin
 _pkgname=ronin-link
-pkgver=2.2.0
+pkgver=2.3.0
 pkgrel=1
 pkgdesc="A desktop app for linking to your machines securely in Ronin . A desktop app for linking to your machines securely in Ronin."
 arch=('x86_64')
@@ -17,12 +17,12 @@ optdepends=('apparmor'
 options=('!strip' '!emptydirs')
 install=${pkgname}.install
 source_x86_64=("https://ronin.cloud/apps/${_pkgname}-${pkgver}.deb")
-sha512sums_x86_64=('d1908354c2dac93dcf26560eeb4206169e6a772c77d8ad87d11b6a6d34eb9779769becf8ed6c7926d60fddbd27389a2117af06959506289fce548faad6ba020f')
+sha512sums_x86_64=('ca386370e1a9eebfe4a0655e453a55ec62acf5bfbbbc326d71a722280bdafe4f83a7d8a6b9d21b65008ff9eb4dad66ea4bfb958fe8774db8c4ab46e0694dc3fd')
 
 package(){
 
 	# Extract package data
-	tar -xJ -f data.tar.xz -C "${pkgdir}"
+	tar -xI zstd -f data.tar.zst -C "${pkgdir}"
 
         install -D -m644 "${pkgdir}/usr/lib/${_pkgname}/LICENSES.chromium.html" "${pkgdir}/usr/share/licenses/${_pkgname}/LICENSE.html"
 	install -D -m644 "${pkgdir}/usr/share/doc/${_pkgname}/copyright" "${pkgdir}/usr/share/licenses/${_pkgname}/COPYRIGHT"
