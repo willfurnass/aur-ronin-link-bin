@@ -3,7 +3,7 @@
 
 pkgname=ronin-link-bin
 _pkgname=ronin-link
-pkgver=2.3.0
+pkgver=2.3.2
 pkgrel=1
 pkgdesc="A desktop app for linking to your machines securely in Ronin . A desktop app for linking to your machines securely in Ronin."
 arch=('x86_64')
@@ -11,13 +11,11 @@ url="https://ronin.cloud"
 license=('MIT')
 groups=('')
 depends=('alsa-lib' 'atk' 'at-spi2-atk' 'at-spi2-core' 'cairo' 'dbus' 'desktop-file-utils' 'discord' 'expat' 'gcc-libs' 'gdk-pixbuf2' 'glib2' 'glibc' 'gtk3' 'gvfs' 'hicolor-icon-theme' 'libcups' 'libnotify' 'libsecret' 'libx11' 'libxcb' 'libxcomposite' 'libxcursor' 'libxdamage' 'libxext' 'libxfixes' 'libxi' 'libxrandr' 'libxrender' 'libxss' 'libxtst' 'nspr' 'nss' 'pango' 'trash-cli' 'xdg-utils')
-optdepends=('apparmor'
-            'libgnome-keyring'
-            'pulseaudio')
+optdepends=('pulseaudio' 'alsa-lib')
 options=('!strip' '!emptydirs')
 install=${pkgname}.install
 source_x86_64=("https://ronin.cloud/apps/${_pkgname}-${pkgver}.deb")
-sha512sums_x86_64=('ca386370e1a9eebfe4a0655e453a55ec62acf5bfbbbc326d71a722280bdafe4f83a7d8a6b9d21b65008ff9eb4dad66ea4bfb958fe8774db8c4ab46e0694dc3fd')
+sha512sums_x86_64=('34811f561f8d46b3dbf569fa493343d43662792fbfb30d10daa54634eac947fe1cf1a122e2c33f607e9c01e8d50f83ddf15158b987412036ae4c6ab8acf76bf5')
 
 package(){
 
