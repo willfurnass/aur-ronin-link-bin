@@ -4,11 +4,12 @@ Repackaged .deb package.
 
 ## Build and install
 
+To just build:
 ```
 makepkg
 ```
 
-Optionally:
+Or to build and install:
 ```
 makepkg --install
 ```
