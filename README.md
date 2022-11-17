@@ -1,6 +1,6 @@
 # [RONIN LINK](https://blog.ronin.cloud/ronin-link/) for Arch AUR
 
-Repackaged .deb package.
+Repackaged .deb package.  **Work in progress**.
 
 ## Build and install
 
